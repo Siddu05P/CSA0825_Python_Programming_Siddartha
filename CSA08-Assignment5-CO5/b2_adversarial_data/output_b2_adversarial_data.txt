@@ -1,0 +1,23 @@
+
+=== B2 Adversarial data ===
+missing column  : MISSING COLUMNS: ['pm25']
+wrong delimiter : MISSING COLUMNS: ['date', 'pm25', 'station']
+latin-1 encoding: ENCODING ERROR: invalid continuation byte
+empty file      : EMPTY FILE
+fixed delimiter : OK 1 rows
+string + quote  -> OperationalError: near "Brien": syntax error
+? placeholder   -> [("O'Brien Road", 70.0)]
+injection by +  -> [('Adyar', 48.0), ("O'Brien Road", 70.0)] (ALL rows leaked)
+injection by ?  -> []
+54.0 108.0
+None
+200,000 inserts: executemany 0.165s | execute in loop 0.318s
+
+--- B2 sentiment adversarial ---
+score=-1 negative | Oh great, another day of thick smoke. Wonderful service!
+score=+1 positive | I can't say it was not bad.
+score=+0 neutral  | The roads are clean but the air is terrible and the staff are rude.
+score=-1 negative | Air is good but traffic smoke is bad.
+score=+1 positive | The air quality is not very good
+score=+0 neutral  | Never seen it this clean, but the bus is slow
+score=+0 neutral  | Awful! the air is horrible

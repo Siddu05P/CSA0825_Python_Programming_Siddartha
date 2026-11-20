@@ -1,0 +1,13 @@
+
+=== Q3 Vehicle numbers ===
+tn 09 ab 1234   -> TN09AB1234  valid
+KA-01-M-0007    -> KA01M0007   valid
+TN9AB1234       -> TN9AB1234   INVALID
+TN 22 1234 AB   -> TN221234AB  INVALID
+'Tn09Ab1234'           -> TN09AB1234   True TN 09 AB 1234
+'tn-09-ab-1234'        -> TN09AB1234   True TN 09 AB 1234
+'TN09ABC1234'          -> TN09ABC1234  False 
+'TN09AB123'            -> TN09AB123    False 
+'T109AB1234'           -> T109AB1234   False 
+'  tn 09 a 1 2 3 4 '   -> TN09A1234    True TN 09 A 1234
+0007 'M' 1234 'AB'

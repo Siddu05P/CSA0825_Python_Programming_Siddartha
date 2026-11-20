@@ -1,0 +1,9 @@
+
+=== Q5 Comprehensions ===
+n=   10000 loop=0.0014s comp=0.0013s map/filter=0.0017s identical=True
+n=  100000 loop=0.0142s comp=0.0133s map/filter=0.0174s identical=True
+n= 1000000 loop=0.1410s comp=0.1648s map/filter=0.1882s identical=True
+getsizeof list comp 8448728 generator 192
+all-valid: 10 all-invalid: 0
+{0: 1, 2: 5} {1, 5}
+sum(list) 0.0760s sum(gen) 0.0819s

@@ -1,0 +1,10 @@
+=== Q1 Rainfall ===
+weeks: 53 wettest week# 47 208.7 driest week# 4 0
+max day 59.1 at 250 | dry days: 231
+slices: True 7 53
+n=   365 naive adds=    2513 t=0.0002s | running adds=     722 t=0.0001s | same=True
+n= 36500 naive adds=  255458 t=0.0240s | running adds=   72992 t=0.0055s | same=True
+n=365000 naive adds= 2554958 t=0.2164s | running adds=  729992 t=0.0521s | same=True
+empty: ([], 0) ([], 0) short: ([], 0) ([], 0)
+insert at 0 on 1M list: 0.00076s
+running 0.0048s deque(sum) 0.0090s

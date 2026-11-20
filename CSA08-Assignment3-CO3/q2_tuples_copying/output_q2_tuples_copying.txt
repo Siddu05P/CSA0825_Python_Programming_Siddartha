@@ -1,0 +1,19 @@
+
+=== Q2 Tuples/copy ===
+bad : [[0, 7, 0, 0], [0, 7, 0, 0], [0, 7, 0, 0]]
+good: [[0, 7, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+True False
+[139814178769728, 139814178769728] [139814175160000, 139814175161664]
+T. Nagar
+TypeError: unhashable type: 'list'
+Chennai Central 13.0827 80.2707
+T. Nagar 13.0418 80.2341
+alias [[99, 2], [3, 4]] | shallow [[99, 2], [3, 4]] | slice [[99, 2], [3, 4]] | deep [[1, 2], [3, 4]]
+after append: alias 3 shallow 2
+caller list: [1, 'X']
+getsizeof list 8000056 tuple 8000040
+list create 0.0225s
+tuple create 0.0285s
+index list 0.00023s tuple 0.00010s
+TypeError: 'tuple' object does not support item assignment | tuple is now ([1, 2, 3], 3)
+sparse grid {(0, 1): 7} dense cells 3x4 = 12

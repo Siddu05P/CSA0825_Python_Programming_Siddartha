@@ -1,0 +1,7 @@
+
+=== Q4 String building ===
+n=   1000 +=:0.0001s join:0.0000s fstring-join:0.0004s same=True len=12690
+n=  10000 +=:0.0012s join:0.0003s fstring-join:0.0040s same=True len=136890
+n= 200000 +=:0.0223s join:0.0075s fstring-join:0.0492s same=True len=3048890
+same text: True | length: 3048890
+avg += 0.0150s  avg join 0.0049s  runs+=['0.0131', '0.0158', '0.0162'] join=['0.0060', '0.0042', '0.0044']

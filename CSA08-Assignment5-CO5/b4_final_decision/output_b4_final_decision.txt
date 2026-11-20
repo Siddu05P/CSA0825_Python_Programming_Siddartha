@@ -1,0 +1,19 @@
+
+--- B4 Complete the Code output ---
+positive | Roads are clean and the bus was fast.
+negative | Smoke from the factory, air is bad.
+negative | The staff were not helpful.
+positive | Not bad, service improved.
+
+=== B4 Complaints: 50 complaints, my own labels ===
+basic lexicon agreement: 40/50 = 80%   extended lexicon: 48/50 = 96%
+sample wrong (extended):
+   ('neutral', 'negative', 'Complaint number was not registered.')
+   ('neutral', 'negative', 'The readings were not updated today.')
+gold counts: Counter({'negative': 25, 'positive': 19, 'neutral': 6})
+top words: [('smoke', 7), ('bad', 6), ('air', 3), ('slow', 3), ('broken', 3)]
+extractive summary: ['The air near the factory is bad and full of smoke.', 'Traffic smoke is bad near the signal.', 'Garbage burning every night, the smoke is terrible.']
+first-k summary   : ['The air near the factory is bad and full of smoke.', 'The staff were not helpful at the office.', 'Garbage burning every night, the smoke is terrible.']
+EXPLAIN before index: SCAN readings | after: SEARCH readings USING INDEX idx_sd (station=? AND day=?)
+1,000,000 rows, one-station-one-day query: no index 44.42 ms | with index 0.016 ms | speed-up 2734x
+scorer: 50000 complaints in 0.055s = 1.1 us each -> 50,000 complaints in 0.05s

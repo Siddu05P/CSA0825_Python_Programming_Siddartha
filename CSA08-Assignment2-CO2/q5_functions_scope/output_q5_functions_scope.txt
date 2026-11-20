@@ -1,0 +1,10 @@
+
+=== Q5 Defaults ===
+['Tea', 'Vada'] ['Tea', 'Vada']
+['Tea'] ['Vada']
+(['Tea', 'Vada'],)
+(105.0, 5.0) (118.0, 18.0)
+global
+changed
+1 2 3
+['Tea'] ['Vada'] ['Dosa'] ['Tea', 'Coffee']

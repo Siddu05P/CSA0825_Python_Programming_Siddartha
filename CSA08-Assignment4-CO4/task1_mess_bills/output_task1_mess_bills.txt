@@ -1,0 +1,8 @@
+=== TASK 1: repaired mess-bill script ===
+ORIGINAL -> ('Bala 1300\nEswar -50\n', 1250)
+Arun 1250.50
+Bala 1300
+Farid 1100.25
+Total 3650.75
+Rejected: [(3, '192311003,Chitra,abc', 'amount is not a number'), (4, '192311004,Deepa', 'expected 3 fields'), (5, '192311005,Eswar,-50', 'negative amount')]
+(Decimal('0'), '', [(0, PosixPath('/tmp/tmpcv5hciyd/nofile.txt'), 'file not found')])

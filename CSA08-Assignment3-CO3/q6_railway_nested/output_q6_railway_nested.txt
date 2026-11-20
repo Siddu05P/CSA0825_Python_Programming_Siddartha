@@ -1,0 +1,6 @@
+
+=== Q6 Railway ===
+23:30 [(12627, '21:02')] [] []
+trains=   100 scan=   0.044 ms  index=  0.002 ms  index memory=39.5 KiB  same=True
+trains=  1000 scan=   0.414 ms  index=  0.015 ms  index memory=367.7 KiB  same=True
+trains= 10000 scan=   4.699 ms  index=  0.418 ms  index memory=3790.3 KiB  same=True

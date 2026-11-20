@@ -1,0 +1,8 @@
+
+=== Q3 Dictionaries ===
+[('seeds', 3), ('price', 2), ('received', 2)]
+{} {'seeds': 3}
+{'Salem': ['seeds late', 'no fertiliser'], 'Erode': ['price high']}
+n=  1000 dict=0.0019s list.count=0.0305 Counter=0.0009s same=True
+n= 10000 dict=0.0198s list.count=0.3474 Counter=0.0171s same=True
+n=100000 dict=0.2109s list.count=skipped Counter=0.1109s same=True

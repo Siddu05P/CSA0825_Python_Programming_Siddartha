@@ -1,0 +1,13 @@
+
+=== Q4 Sets ===
+clash      : ['192311004', '192311009']
+exactly one: ['192311001', '192311002', '192311007', '192311010']
+neither    : ['192311003', '192311005', '192311006', '192311008']
+methods same: True
+empty: set() | identical: True set()
+n=   10000 in list     105.4 us | in set   0.22 us
+n=  100000 in list    1116.8 us | in set   0.37 us
+n= 1000000 in list    6679.9 us | in set   0.42 us
+n=500 nested=0.0035s set&=0.00006s same=True
+n=2000 nested=0.0542s set&=0.00011s same=True
+n=4000 nested=0.2380s set&=0.00019s same=True

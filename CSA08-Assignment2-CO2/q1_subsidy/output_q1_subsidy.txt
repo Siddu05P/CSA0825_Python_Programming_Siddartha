@@ -1,0 +1,11 @@
+=== Q1 Subsidy ===
+units ration senior | buggy-separate-if | fixed-separate-if | if-elif
+(50, 0, 0) ['full'] ['full'] full
+(100, 0, 0) ['full'] ['full'] full
+(100, 1, 0) ['full', 'partial'] ['full'] full
+(101, 0, 0) [] [] none
+(101, 1, 0) ['partial'] ['partial'] partial
+(200, 1, 0) ['partial'] ['partial'] partial
+(201, 0, 0) [] [] none
+(201, 0, 1) ['senior'] ['senior'] senior
+(250, 1, 1) ['senior'] ['senior'] senior

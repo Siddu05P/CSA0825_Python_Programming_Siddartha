@@ -1,0 +1,23 @@
+
+=== B3 Loops vs pandas vs SQL ===
+small-data agreement: True | groups: 3
+stations | rows | loops+statistics | running sum | pandas groupby | SQL
+       1 |      8760 | 0.021s | 0.012s | 0.007s | 0.015s
+      12 |    105120 | 0.255s | 0.151s | 0.056s | 0.183s
+     120 |   1051200 | 2.776s | 1.655s | 0.509s | 2.076s
+         1503318 function calls in 0.691 seconds
+
+   Ordered by: cumulative time
+   List reduced from 43 to 8 due to restriction <8>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.084    0.084    0.691    0.691 /home/claude/repos/CSA08-Assignment5-CO5/b3_loops_vs_libraries_vs_sql/b3_loops_vs_libraries_vs_sql.py:23(daily_loops)
+     4380    0.007    0.000    0.342    0.000 /usr/lib/python3.12/statistics.py:468(mean)
+     4380    0.062    0.000    0.303    0.000 /usr/lib/python3.12/statistics.py:154(_sum)
+   105121    0.155    0.000    0.251    0.000 /usr/lib/python3.12/csv.py:112(__next__)
+     4380    0.017    0.000    0.169    0.000 {built-in method builtins.sum}
+    30630    0.020    0.000    0.093    0.000 /usr/lib/python3.12/fractions.py:613(forward)
+    30630    0.034    0.000    0.061    0.000 /usr/lib/python3.12/fractions.py:710(_add)
+    35010    0.017    0.000    0.060    0.000 /usr/lib/python3.12/statistics.py:203(<genexpr>)
+
+

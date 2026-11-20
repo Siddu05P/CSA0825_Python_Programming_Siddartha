@@ -1,0 +1,36 @@
+=== B1.1 Clean a small file with every problem ===
+BEFORE:
+station,date,hour,pm25,pm10,no2,temp
+Adyar,2026-10-01,8,48,80,30,30.0
+Adyar,2026-10-01,9,NA,82,31,31.0
+Adyar,2026-10-01,10,,85,32,31.5
+Adyar,2026-10-01,11,-5,90,33,32.0
+Adyar,2026-10-01,12,5000,95,34,32.5
+Adyar,2026-10-01,8,48,80,30,30.0
+Guindy,2026-10-01,8,95,150,60,86.0
+Guindy,2026-10-01,9,121,170,65,89.6
+
+AFTER:
+('Adyar', '2026-10-01', 8, 48.0, 80.0, 30.0, 30.0)
+('Guindy', '2026-10-01', 8, 95.0, 150.0, 60.0, 30.0)
+('Guindy', '2026-10-01', 9, 121.0, 170.0, 65.0, 32.0)
+removed: {'missing': 2, 'impossible': 2, 'duplicate': 1}
+
+=== B1 Complete the Code ===
+[('Adyar', '2026-10-01', 48.0), ('Guindy', '2026-10-01', 95.0), ('Guindy', '2026-10-03', 121.0)]
+[0.0, 0.644, 1.0]
+z-scores: [-1.324, 0.232, 1.092]
+
+generated 8640 clean readings
+
+=== B1.3 Store and query ===
+Q1 avg PM2.5 Adyar Oct: (50.34,)
+Q2 3 worst stations: [('Kodambakkam', 98.9), ('Anna Nagar', 92.3), ('Alandur', 85.9)]
+Q3 3 worst hours: [(20, 89.7), (8, 89.7), (19, 89.3)]
+correlation temp vs PM2.5 (Adyar): 0.142
+worst hour: (20, 89.72111111111111) | best hour: (17, 63.20722222222222)
+
+=== B1 alt: csv loops vs pandas cleaning ===
+n=    1000 csv loop 0.001s (0.1 MB peak) | pandas 0.009s | same count True maxdiff 0.0e+00
+n=  100000 csv loop 0.133s (10.9 MB peak) | pandas 0.042s | same count True maxdiff 0.0e+00
+n= 1000000 csv loop 1.391s (109.0 MB peak) | pandas 0.353s | same count True maxdiff 0.0e+00

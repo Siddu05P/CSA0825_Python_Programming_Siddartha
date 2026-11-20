@@ -1,0 +1,9 @@
+
+=== Q7 Contacts ===
+['ravi', 'ravi kumar'] ['0442345678', '9840012345'] ['ravi@x.com']
+['priya'] ['9876543210'] []
+['priya'] ['9999911111'] []
+no phone: ['NoPhone']
+n=  1000 dict=0.0041s pairwise=0.0175s groups 500 vs 500
+n=100000 dict=0.6569s pairwise skipped (O(n^2) = 5,000,000,000 comparisons) groups=50000
+pairwise n=10000: 1.628s

@@ -1,0 +1,6 @@
+
+=== Q7 Redesign of Q6: naive -> loop ===
+n=20 naive calls=21891 time=0.0015s | loop additions=19 time=3.17us
+n=25 naive calls=242785 time=0.0163s | loop additions=24 time=3.02us
+n=30 naive calls=2692537 time=0.1869s | loop additions=29 time=5.19us
+n=32 naive calls=7049155 time=0.4760s | loop additions=31 time=6.20us
